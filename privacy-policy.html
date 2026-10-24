@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quick Fill — Privacy Policy</title>
+<style>
+  :root { --bg:#ffffff; --fg:#1d2b27; --muted:#5b6b66; --accent:#1f3a34; --line:#dfe6e3; --card:#f5f8f6; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#141a18; --fg:#e8ece9; --muted:#9fb0aa; --accent:#7fc4ad; --line:#2a3733; --card:#1b2421; }
+  }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:40px 16px 64px; }
+  h1 { font-size:1.9rem; margin:0 0 4px; color:var(--accent); }
+  h2 { font-size:1.2rem; margin:2rem 0 .4rem; color:var(--accent); }
+  .meta { color:var(--muted); margin:0 0 1.5rem; }
+  .summary { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:14px 18px; }
+  code { background:var(--card); border:1px solid var(--line); border-radius:4px; padding:1px 5px; font-size:.92em; }
+  table { width:100%; border-collapse:collapse; margin:.5rem 0; }
+  th, td { text-align:left; padding:8px 10px; border-bottom:1px solid var(--line); vertical-align:top; }
+  th { color:var(--muted); font-weight:600; font-size:.9rem; }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Quick Fill — Privacy Policy</h1>
+  <p class="meta">Effective date: 24 October 2026 · Applies to the Quick Fill browser extension, version 1.3.0 and later</p>
+
+  <div class="summary">
+    <strong>In short:</strong> Quick Fill does not collect, transmit, sell or share any personal data.
+    It runs entirely inside your browser, and the only thing it saves is your own settings, on your own device.
+  </div>
+
+  <h2>What Quick Fill does</h2>
+  <p>Quick Fill fills web forms with generated test data when you ask it to, by clicking its toolbar icon or using its keyboard shortcut.
+  The values it enters (names, addresses, dates, ID-style numbers and so on) are made up on your device each time. They are not taken from you or from any real person,
+  and are deliberately formatted so they cannot be mistaken for real identifiers.</p>
+
+  <h2>Information we collect</h2>
+  <p><strong>None.</strong> Quick Fill has no servers, no accounts, no analytics, no advertising and no tracking. It makes no network requests of its own.
+  The developer cannot see the pages you visit, the forms you fill or the settings you choose.</p>
+
+  <h2>Information stored on your device</h2>
+  <p>Quick Fill saves your preferences using the browser's <code>chrome.storage.local</code>. This storage stays on your device and is not synced or sent anywhere. It contains only:</p>
+  <ul>
+    <li>Region override (or "detect from the page")</li>
+    <li>Dropdown strategy</li>
+    <li>Optional seed text you type in Settings</li>
+    <li>On/off switches: fill all fields, overwrite existing values, validate after filling, show result panel, highlight filled fields</li>
+  </ul>
+  <p>You can clear this at any time by removing the extension or clearing its data in your browser.</p>
+
+  <h2>Page content</h2>
+  <p>When you trigger a fill, Quick Fill reads the form controls on the active page (labels, field types, current values and validation messages) so it can choose suitable values and write them in.
+  This happens locally in your browser. Page content is not stored, logged to any server or transmitted. The run report is written only to your browser's developer console, and optionally to an on-page panel, both of which stay on your device.</p>
+
+  <h2>Permissions, and why they are needed</h2>
+  <table>
+    <tr><th>Permission</th><th>Purpose</th></tr>
+    <tr><td><code>activeTab</code></td><td>Lets Quick Fill act on the current tab only after you click the icon or press the shortcut. It gets no access to other tabs.</td></tr>
+    <tr><td><code>scripting</code></td><td>Injects the fill logic into that tab so it can read and fill the form.</td></tr>
+    <tr><td><code>storage</code></td><td>Saves your settings on your device.</td></tr>
+  </table>
+  <p>Quick Fill never submits a form for you.</p>
+
+  <h2>Third parties</h2>
+  <p>Quick Fill does not share data with, or send data to, any third party. It contains no third-party code, remote scripts or analytics libraries.</p>
+
+  <h2>Children's privacy</h2>
+  <p>Quick Fill does not collect personal information from anyone, including children.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, the updated version will be published at this address with a new effective date.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy can be raised by opening an issue on the project's GitHub repository:
+  <a href="https://github.com/AnshulSharma4014/Quick-Fill/issues">github.com/AnshulSharma4014/Quick-Fill/issues</a>.</p>
+</main>
+</body>
+</html>
